@@ -5,9 +5,11 @@ public class Main {
         System.out.println(res); // BANANAGRAPESMOOTHIE
 
 				String res2 = func.apply("apple", "orange", "pineapple", "smoothie");
-				System.out.println(res); // APPLEORANGEPINEAPPLESMOOTHIE
+				System.out.println(res2); // APPLEORANGEPINEAPPLESMOOTHIE
     }
 }
 
 @FunctionalInterface
-// your code here
+interface ConcatStringFunction {
+    String apply(String... args);
+}
